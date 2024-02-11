@@ -1,0 +1,123 @@
+.cartitems {
+   width: 90%;
+   margin: 20px auto; 
+}
+.cartitems hr{
+    height: 3px;
+    background: lightgray;
+
+}
+.cartitem-main{
+    /* display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+}
+.carticon-product-icon {
+    width:50px;
+
+}
+.cartitems-format {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+.rmvicon {
+    font-size:20;
+    background-color:peru;
+    padding:5px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    cursor:pointer;
+}
+.cartitems-quantity {
+    padding: 5px 8px;
+
+    border: none;
+}
+.cartitem-down {
+    display: flex;
+    gap: 300px;
+    margin:30px auto;
+}
+.cartitem-total{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.cartitmes-totalitems{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.butns {
+    width: 200px;
+    padding: 10px 15px;
+    background-color: green;
+  
+    color: white;
+    font-weight:700;
+    border: 1px solid white;
+    cursor:pointer;
+}
+.cartitems-promo {
+    flex: 1;
+    font-size: 16px;
+}
+.cartitems-promo p {
+    font-size: 18px;
+    font-weight: 800;
+}
+.cartitem-promobox input{
+    border: none;
+    padding:15px 20px;
+    width: 300px;
+    font-size: 16px;
+
+}
+.cartitem-promobox button{
+    padding:15px 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+@media (max-width:600px){
+    .cartitem-down {
+        display: block;
+        margin:30px auto;
+    }
+    .cartitem-promobox input{
+        border: none;
+        padding:10px 15px;
+        width: 300px;
+        font-size: 16px;
+    
+    }
+    .cartitem-promobox button{
+        padding:10px 15px;
+        margin-top: 10px;
+        border: none;
+        background-color: green;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+@media (min-width:601px) and (max-width:899px) {
+    .cartitem-down {
+        display: flex;
+        gap:100px;
+        margin:30px auto;
+    }
+    .cartitem-promobox button{
+        margin-top: 20px;
+    }
+}

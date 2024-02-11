@@ -1,0 +1,51 @@
+.items{
+   width: 300px;
+
+   cursor: pointer;
+   padding:10px;
+   
+}
+.items p{
+    margin: 6px 0px;
+}
+.items img{
+    width: 300px;
+    height:300px;
+    object-fit:cover;
+    object-position:top;
+  
+    
+}
+.item-price{
+    display:flex;
+    gap:20px;
+}
+.item-price-new{
+    color: green;
+    font-size: 18px;
+    font-weight: 600;
+}
+.item-price-old{
+    color:lightgray;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: line-through;
+
+}
+.items:hover{
+    transform: scale(1.05);
+    transition:0.6s;
+}
+/* @media (max-width:760px){
+    .items{
+     width: 700px;
+     overflow: hidden
+        
+    }
+    .items img{
+        width:100%;
+        white-space: nowrap;
+        overflow: auto;
+        
+    }
+} */

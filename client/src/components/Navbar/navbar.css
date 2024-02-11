@@ -1,0 +1,146 @@
+.navbar{
+  
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+      
+ }
+ .nav-logo h2{
+    color: green;
+ 
+ }
+ .nav-menu {
+    display: flex;
+    align-items: center;
+    gap:50px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    
+ }
+
+ .nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3px;
+    cursor: pointer;
+ }
+ .nav-menu li:hover {
+    color:green;
+    font-weight: bold;
+    font-size: 20px;
+    
+ }
+ 
+ .nav-cart-login{
+    display: flex;
+    align-items: center;
+    gap:50px;
+ }
+ .links{
+   text-decoration: none;
+   color:black;
+ }
+ .links:hover{
+   color: green;
+ }
+ .links:nth-last-child():hover{
+   color:black;
+ }
+ .nav-cart-login button {
+    width:100px;
+    padding:10px 5px;
+    font-size: 18px;
+    border-radius: 15px;
+    border:1px solid lightgray;
+    background-color: white;
+    color:black;
+    font-weight: 500;
+    cursor: pointer;
+
+ }
+ .nav-cart-login button:active{
+    background-color: lightgray;
+ }
+ .icons{
+    width:30px;
+    height: 30px;
+    font-weight: bold;
+ }
+ .nav-cart-count {
+    width: 22px; 
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    background-color:green;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+
+ }
+ .mobile-categorie{
+   display: none;
+ }
+ .lol{
+   display:flex;
+   align-items: center;
+   gap:10px;
+ }
+ .lol-text{
+   font-size: 18px;
+   font-weight: 600;
+ }
+ @media (max-width:760px){
+   .navbar{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+   }
+   .nav-menu{
+      display: none;
+   }
+   .nav-cart-login{
+      gap:20px;
+   }
+   .nav-cart-login button{
+      width:70px;
+      font-size: 16px;
+      padding:5px;
+   }
+   .nav-cart-count{
+      margin-left: -35px;
+   }
+   .mobile-categorie{
+      display: block;
+       width:90%;
+       margin:10px auto;
+       border: 1px solid green;
+       border-radius: 20px;
+   }
+   .nav-menus{
+      display: flex;
+      width: 100%;
+      list-style: none;
+   }
+   .nav-menus li {
+      width:100%;
+      color:black;
+   }
+   .nav-menus li:hover{
+      color:green;
+      font-size: 18px;
+      font-weight: 600;
+   }
+   .lol-text{
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+ }
+ 
